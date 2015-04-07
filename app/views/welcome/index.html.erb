@@ -1,0 +1,41 @@
+<div class="absolute">	
+	<%= video_tag("cat.mp4",id:"video", autoplay: true, loop: true) %>
+</div>
+<p class="text-center" style="display:none;font-size:1.5em;text-decoration:underline;" id="show">
+		Mostrar texto
+</p>
+<div class="text-center full-height black">
+	<div class="row full-height middle-xs center-xs">
+		<div class="col-xs">
+			<div class="box">
+				<%= image_tag("logo.png", width:300) %>
+				<h1 style="margin:0px;margin-top:-5px;">Estamos moviendo algunas cosas.</h1>	
+				<p>
+					Los tutoriales volverán en cuanto los programadores dejen de repetir el vídeo del fondo.
+				</p>
+				<p>
+					Mientras tanto también tú puedes ver el vídeo... <a href="#" id="hide">Ocultar texto</a>
+				</p>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+<script>
+	$("#hide").on("click",function(ev){
+		ev.preventDefault();
+		$(".black").fadeOut("slow",function(){
+			$("#show").fadeIn();
+		});
+		return false;
+	});
+	$("#show").on("click",function(ev){
+		ev.preventDefault();
+		$("#show").fadeOut("slow",function(){
+			$(".black").fadeIn();
+		});
+		return false;
+	});
+</script>

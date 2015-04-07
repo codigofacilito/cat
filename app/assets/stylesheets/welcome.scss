@@ -1,0 +1,42 @@
+html,body{
+	color:white;
+	font-family: 'Oswald', sans-serif;
+	height:100%;
+	margin:0px;
+	overflow:hidden;
+}
+.full-height{
+	height:100%;
+}
+.text-center{
+	text-align:center;
+}
+#show{
+	position:fixed;
+	bottom:10px;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+}
+.black{
+	background-color:rgba(0,0,0,0.4);
+}
+a{
+	color: #ff1744 !important;
+}
+.absolute{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	overflow:hidden;
+	z-index:-1;
+	video{
+		width:100%;
+	}
+}
+h1{
+	font-size:3.5em;
+
+}
